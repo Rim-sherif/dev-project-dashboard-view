@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -52,6 +53,20 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Admin Panel specific colors
+				admin: {
+					'primary': '#3B82F6', // Bright blue
+					'secondary': '#F3F4F6', // Light gray
+					'accent': '#2563EB', // Darker blue
+					'background': '#FFFFFF', // White
+					'surface': '#F9FAFB', // Off-white
+					'border': '#E5E7EB', // Light border
+					'text': '#1F2937', // Dark text
+					'text-light': '#6B7280', // Light text
+					'success': '#10B981', // Green
+					'error': '#EF4444', // Red
+					'warning': '#F59E0B', // Amber
+				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -84,11 +99,16 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'fade-in': {
+					'0%': { opacity: '0' },
+					'100%': { opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fade-in 0.3s ease-out'
 			}
 		}
 	},
